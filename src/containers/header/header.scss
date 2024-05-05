@@ -1,0 +1,77 @@
+@import "../../sass/main.scss";
+.header {
+  // border: 1px solid red;
+  padding: 12rem 4rem 4rem 4rem;
+  display: flex;
+  @include respond(tab-port) {
+    padding: 5rem 0 0 0;
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  //! Left
+  &__left {
+    // border: 1px solid blue;
+    width: 50%;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    &--box {
+      padding: 5rem 10rem;
+      @include respond(tab-port) {
+        padding: 5rem;
+      }
+      // border: 2px solid red;
+      transform: translateY(15%);
+      .header__heading {
+        // border: 1px solid red;
+        font-size: 6rem;
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+        @include respond(tab-land) {
+          font-size: 5rem;
+        }
+        span {
+          display: block;
+          color: #0071bc;
+        }
+        margin-bottom: 3rem;
+      }
+      .resume {
+        font-size: 2rem;
+        @include respond(tab-port) {
+          font-size: 1.5rem;
+        }
+        width: 30%;
+        text-align: center;
+        background-color: #0071bc;
+        color: white;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          @include defaultShadow;
+        }
+      }
+    }
+  }
+  //! Rigth
+  &__right {
+    // border: 1px solid red;
+    width: 50%;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+      @include respond(tab-land) {
+        width: 60%;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../sass/main.scss";
+
+.footer {
+  color: white;
+  padding: 6rem 12rem;
+  @include respond(tab-port) {
+    padding: 3rem 6rem;
+  }
+  text-align: center;
+  background-color: #0e2431;
+  .footer_heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .footer__links {
+    a {
+      color: white;
+    }
+  }
+}

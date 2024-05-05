@@ -1,0 +1,11 @@
+@import "../../sass/main.scss";
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // border: 1px solid red;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}

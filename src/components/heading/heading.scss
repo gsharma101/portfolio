@@ -1,0 +1,10 @@
+@import "../../sass/main.scss";
+.section_heading {
+  text-transform: capitalize;
+  color: $color-primary;
+  font-size: 3.5rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
