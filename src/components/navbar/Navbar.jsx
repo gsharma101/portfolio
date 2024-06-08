@@ -43,6 +43,16 @@ const Navbar = () => {
           <a href="#footer">Contact Me</a>
         </div>
       </div>
+
+      <div className="lights">
+        <label class="switch">
+          <input type="checkbox"/>
+            <span class="slider"></span>
+        </label>
+      </div>
+
+      {/*
+      Old Toggle
       <div className="lights">
         {toggleMoon ? (
           <BsFillSunFill
@@ -54,6 +64,7 @@ const Navbar = () => {
           <BsFillMoonFill color="#000000" size={20} onClick={darkMode} />
         )}
       </div>
+      */}
       {/* Mobile Menu */}
       <div className="mobile__menu">
         {toggleMenu ? (
