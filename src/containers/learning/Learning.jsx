@@ -2,7 +2,7 @@ import React from "react";
 import "./learning.scss";
 import Heading from "../../components/heading/Heading";
 import { Certificate } from "../../components";
-import { Css, Javascript, ReactCor } from "./index";
+import { Css, Javascript, ReactCor, Node } from "./index";
 function Learning() {
   return (
     <section className="learning" id="learning">
@@ -24,6 +24,15 @@ function Learning() {
           The Ultimate React Course 2023: React, Redux & More
           "
           link="https://www.udemy.com/certificate/UC-2992558c-1388-405a-8f7d-d74f3f89cd17/"
+        />
+      </div>
+      <div className="row">
+        <Certificate
+          img={Node}
+          titile="
+          Node.js, Express, MongoDB & More: The Complete Bootcamp 2024
+          "
+          link="https://www.udemy.com/certificate/UC-50d1c18d-8b76-43fd-8905-9fff80c792c0/"
         />
       </div>
     </section>
